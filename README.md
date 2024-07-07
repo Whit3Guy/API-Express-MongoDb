@@ -56,7 +56,7 @@ Esta é uma API RESTful criada com Express e MongoDB usando Mongoose para modela
     "name": "Nome da Pessoa",
     "salary": 5000,
     "approved": true
-  }
+  }```
 
 
 ### Códigos de Resposta:
@@ -94,13 +94,12 @@ URL: /person/:id
 Método: PATCH
 Descrição: Atualiza uma pessoa pelo ID.
 Body:
-json
-`
+``json
 {
   "name": "Nome Atualizado",
   "salary": 6000,
   "approved": false
-}`
+}``
 
 **Códigos de Resposta**:
 200 OK: Pessoa atualizada com sucesso.
@@ -121,17 +120,15 @@ Método: DELETE
 Configuração do Banco de Dados
 A string de conexão com o MongoDB Atlas é configurada no arquivo .env:
 
-env
-
-`DBUser=seu_usuario
+`env
+DBUser=seu_usuario
 DBPassword=sua_senha`
 
 A API usa o Mongoose para modelar os dados.
 O modelo Person está definido em ./models/Person.js:
 
-javascript
-
-`const mongoose = require('mongoose');
+`javascript
+const mongoose = require('mongoose');
 const Person = mongoose.model('Person', {
   name: String,
   salary: Number,
@@ -141,8 +138,7 @@ const Person = mongoose.model('Person', {
 module.exports = Person;
 ### Estrutura do Projeto
 
-bash
-
+`bash
 api-express-mongodb/
 ├── models/
 │   └── Person.js
@@ -151,7 +147,7 @@ api-express-mongodb/
 ├── .env
 ├── package.json
 ├── server.js
-└── README.md 
+└── README.md `
 
 Inicializando a API
 Para iniciar a API, execute o seguinte comando:
