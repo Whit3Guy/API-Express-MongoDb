@@ -71,13 +71,13 @@ Esta é uma API RESTful criada com Express e MongoDB usando Mongoose para modela
 **Método**: GET
 **Descrição**: Retorna uma lista de todas as pessoas.
 
-##Códigos de Resposta:
+**Códigos de Resposta**:
 
 200 OK: Lista de pessoas retornada com sucesso.
 500 Internal Server Error: Erro inesperado no servidor.
 
 
-###Obter uma pessoa por ID:
+### Obter uma pessoa por ID:
 URL: /person/:id
 Método: GET
 
@@ -89,7 +89,7 @@ Descrição: Retorna uma pessoa pelo ID.
 424 Failed Dependency: Pessoa não encontrada.
 500 Internal Server Error: Erro inesperado no servidor.
 
-###Atualizar uma pessoa por ID:
+### Atualizar uma pessoa por ID:
 URL: /person/:id
 Método: PATCH
 Descrição: Atualiza uma pessoa pelo ID.
@@ -107,7 +107,7 @@ json
 500 Internal Server Error: Erro inesperado no servidor.
 
 
-###Excluir uma pessoa por ID:
+### Excluir uma pessoa por ID:
 
 URL: /person/:id
 Método: DELETE
@@ -125,6 +125,7 @@ env
 
 `DBUser=seu_usuario
 DBPassword=sua_senha`
+
 A API usa o Mongoose para modelar os dados.
 O modelo Person está definido em ./models/Person.js:
 
@@ -138,7 +139,8 @@ const Person = mongoose.model('Person', {
 });`
 
 module.exports = Person;
-Estrutura do Projeto
+### Estrutura do Projeto
+
 bash
 
 `api-express-mongodb/
