@@ -143,7 +143,7 @@ module.exports = Person;
 
 bash
 
-`api-express-mongodb/
+api-express-mongodb/
 ├── models/
 │   └── Person.js
 ├── routes/
@@ -151,7 +151,7 @@ bash
 ├── .env
 ├── package.json
 ├── server.js
-└── README.md` 
+└── README.md 
 
 Inicializando a API
 Para iniciar a API, execute o seguinte comando:
