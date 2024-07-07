@@ -56,7 +56,7 @@ Esta é uma API RESTful criada com Express e MongoDB usando Mongoose para modela
     "name": "Nome da Pessoa",
     "salary": 5000,
     "approved": true
-  }```
+  }
 
 
 ### Códigos de Resposta:
@@ -94,12 +94,12 @@ URL: /person/:id
 Método: PATCH
 Descrição: Atualiza uma pessoa pelo ID.
 Body:
-``json
+```json
 {
   "name": "Nome Atualizado",
   "salary": 6000,
   "approved": false
-}``
+}
 
 **Códigos de Resposta**:
 200 OK: Pessoa atualizada com sucesso.
